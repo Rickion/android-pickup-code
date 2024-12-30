@@ -1,11 +1,15 @@
 // For format details, see https://aka.ms/devcontainer.json.
 {
-  "name": "Flutter",
-  "image": "ghcr.io/thephaseless/devcontainers/flutter:latest",
+  "name": "Android Development Environment",
+  "image": "ghcr.io/microsoft/vscode-dev-containers/java:17",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {}
+  },
   "customizations": {
     "vscode": {
       "extensions": [
-        "GitHub.codespaces"
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-gradle"
       ]
     }
   }
